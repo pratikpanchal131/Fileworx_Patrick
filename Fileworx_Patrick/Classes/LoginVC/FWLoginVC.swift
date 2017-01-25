@@ -9,6 +9,8 @@
 import UIKit
 import MBProgressHUD
 import SwiftyJSON
+import Toast_Swift
+
 
 class FWLoginVC: UIViewController {
     
@@ -156,7 +158,11 @@ extension FWLoginVC{
                 let controller = Constants.Storyboard.kLoginAndSplashStoryboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
                 self.navigationController?.pushViewController(controller, animated: true)
                 
+            }else
+            {
+                self.view.makeToast((self.objUserModel?.message)!, duration: 3.0, position: .bottom)
             }
+            
         }
     }
     
