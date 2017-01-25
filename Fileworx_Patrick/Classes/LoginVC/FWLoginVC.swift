@@ -19,7 +19,7 @@ class FWLoginVC: UIViewController {
     
     var amutArrayData : [Any]?
     
-    var objMobileSettingModel : FWMobileSetting?
+    var objMobileSettingModel : FWMobileSettingModel?
 
     // MARK: - View Life Cycle
 
@@ -45,7 +45,7 @@ class FWLoginVC: UIViewController {
             debugPrint(json)
             
             print(json["RestResponse"])
-            self.objMobileSettingModel =  FWMobileSetting(json: json)
+            self.objMobileSettingModel =  FWMobileSettingModel(json: json)
             
             
             print("Message is \(self.objMobileSettingModel?.message)")

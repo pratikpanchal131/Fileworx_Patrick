@@ -1,5 +1,8 @@
+
+
+
 //
-//  FWMobileSetting.swift
+//  FWMobileSettingModel.swift
 //
 //  Created by  on 25/01/17
 //  Copyright (c) . All rights reserved.
@@ -8,12 +11,12 @@
 import Foundation
 import SwiftyJSON
 
-public class FWMobileSetting: NSObject, NSCoding {
+public class FWMobileSettingModel: NSObject, NSCoding {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
-	internal let kFWMobileSettingDataKey: String = "data"
-	internal let kFWMobileSettingMessageKey: String = "message"
-	internal let kFWMobileSettingResultKey: String = "result"
+	internal let kFWMobileSettingModelDataKey: String = "data"
+	internal let kFWMobileSettingModelMessageKey: String = "message"
+	internal let kFWMobileSettingModelResultKey: String = "result"
 
 
     // MARK: Properties
@@ -38,9 +41,9 @@ public class FWMobileSetting: NSObject, NSCoding {
     - returns: An initalized instance of the class.
     */
     public init(json: JSON) {
-		data = FWData(json: json[kFWMobileSettingDataKey])
-		message = json[kFWMobileSettingMessageKey].string
-		result = json[kFWMobileSettingResultKey].int
+		data = FWData(json: json[kFWMobileSettingModelDataKey])
+		message = json[kFWMobileSettingModelMessageKey].string
+		result = json[kFWMobileSettingModelResultKey].int
 
     }
 
@@ -53,13 +56,13 @@ public class FWMobileSetting: NSObject, NSCoding {
 
         var dictionary: [String : AnyObject ] = [ : ]
 		if data != nil {
-			dictionary.updateValue(data!.dictionaryRepresentation() as AnyObject, forKey: kFWMobileSettingDataKey)
+			dictionary.updateValue(data!.dictionaryRepresentation() as AnyObject, forKey: kFWMobileSettingModelDataKey)
 		}
 		if message != nil {
-			dictionary.updateValue(message! as AnyObject, forKey: kFWMobileSettingMessageKey)
+			dictionary.updateValue(message! as AnyObject, forKey: kFWMobileSettingModelMessageKey)
 		}
 		if result != nil {
-			dictionary.updateValue(result! as AnyObject, forKey: kFWMobileSettingResultKey)
+			dictionary.updateValue(result! as AnyObject, forKey: kFWMobileSettingModelResultKey)
 		}
 
         return dictionary
@@ -67,19 +70,17 @@ public class FWMobileSetting: NSObject, NSCoding {
 
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
-		self.data = aDecoder.decodeObject(forKey: kFWMobileSettingDataKey) as? FWData
-		self.message = aDecoder.decodeObject(forKey: kFWMobileSettingMessageKey) as? String
-		self.result = aDecoder.decodeObject(forKey: kFWMobileSettingResultKey) as? Int
+		self.data = aDecoder.decodeObject(forKey: kFWMobileSettingModelDataKey) as? FWData
+		self.message = aDecoder.decodeObject(forKey: kFWMobileSettingModelMessageKey) as? String
+		self.result = aDecoder.decodeObject(forKey: kFWMobileSettingModelResultKey) as? Int
 
     }
 
     public func encode(with aCoder: NSCoder) {
-		aCoder.encode(data, forKey: kFWMobileSettingDataKey)
-		aCoder.encode(message, forKey: kFWMobileSettingMessageKey)
-		aCoder.encode(result, forKey: kFWMobileSettingResultKey)
+		aCoder.encode(data, forKey: kFWMobileSettingModelDataKey)
+		aCoder.encode(message, forKey: kFWMobileSettingModelMessageKey)
+		aCoder.encode(result, forKey: kFWMobileSettingModelResultKey)
 
     }
-    
-
 
 }

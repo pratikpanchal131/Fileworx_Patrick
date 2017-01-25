@@ -65,7 +65,10 @@ public class FWGlobalMobileSetttings: NSObject, NSCoding {
 			dictionary.updateValue(anonymousPassword! as AnyObject, forKey: kFWGlobalMobileSetttingsAnonymousPasswordKey)
 		}
 		if allowAnonymousAccess != nil {
-			dictionary.updateValue(allowAnonymousAccess! as AnyObject, forKey: kFWGlobalMobileSetttingsAllowAnonymousAccessKey)
+			dictionary.updateValue(allowAnonymousAccess! as AnyObject
+                
+                
+                , forKey: kFWGlobalMobileSetttingsAllowAnonymousAccessKey)
 		}
 		if clientAppSessionTimeOutInDays != nil {
 			dictionary.updateValue(clientAppSessionTimeOutInDays! as AnyObject, forKey: kFWGlobalMobileSetttingsClientAppSessionTimeOutInDaysKey)

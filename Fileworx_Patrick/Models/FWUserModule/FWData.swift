@@ -47,7 +47,7 @@ public class FWData: NSObject, NSCoding {
 
         var dictionary: [String : AnyObject ] = [ : ]
 		if globalMobileSetttings != nil {
-			dictionary.updateValue(globalMobileSetttings!.dictionaryRepresentation() as AnyObject, forKey: kFWDataGlobalMobileSetttingsKey)
+			dictionary.updateValue(globalMobileSetttings!.dictionaryRepresentation() as AnyObject as AnyObject, forKey: kFWDataGlobalMobileSetttingsKey)
 		}
 
         return dictionary
@@ -58,10 +58,10 @@ public class FWData: NSObject, NSCoding {
 		self.globalMobileSetttings = aDecoder.decodeObject(forKey: kFWDataGlobalMobileSetttingsKey) as? FWGlobalMobileSetttings
 
     }
-    
-    public func encode(with aCoder: NSCoder) {
-        aCoder.encode(globalMobileSetttings, forKey: kFWDataGlobalMobileSetttingsKey)
-    }
 
+    public func encode(with aCoder: NSCoder) {
+		aCoder.encode(globalMobileSetttings, forKey: kFWDataGlobalMobileSetttingsKey)
+
+    }
 
 }
