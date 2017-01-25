@@ -36,7 +36,6 @@ class FWLoginVC: UIViewController {
         btnLogin.layer.borderColor = UIColor.white.cgColor
         
         
-        print(self.test("Panchal"))
     }
     
     @IBAction func btnLoginClicked(_ sender: Any) {
@@ -52,12 +51,6 @@ class FWLoginVC: UIViewController {
         
     }
     @IBAction func btnLoginAsGuestClicked(_ sender: Any) {
-    }
-    
-    
-    func test(_ pratik:String) -> String{
-        
-        return "Name is " + pratik
     }
     
 }
@@ -146,7 +139,7 @@ extension FWLoginVC{
     
     func CallAPILogin(){
         
-        let json: [String: Any] = ["userName":"root", "Password":"root","LastLoginLanguageID":"-1","AuthenticationType":"0"];
+        let json: [String: Any] = ["userName": self.txtUserName.text!, "Password":self.txtPassword.text!,"LastLoginLanguageID":"-1","AuthenticationType":"0"];
         
         
         
