@@ -1,4 +1,7 @@
 PODS:
+  - Material (2.4.9):
+    - Material/Core (= 2.4.9)
+  - Material/Core (2.4.9)
   - MBProgressHUD (0.9.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -7,6 +10,7 @@ PODS:
   - Toast-Swift (2.0.0)
 
 DEPENDENCIES:
+  - Material (~> 2.0)
   - MBProgressHUD (~> 0.9.2)
   - SDWebImage (~> 3.8)
   - SwiftyJSON (from `https://github.com/appsailor/SwiftyJSON.git`, branch `swift3`)
@@ -23,11 +27,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/appsailor/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Material: be1e671e4e42e459630facc1cb7178e3a0c43700
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
-PODFILE CHECKSUM: 1a6fa217f4ea6163ee91ea1bce58b626c586d554
+PODFILE CHECKSUM: de33b22bfa41c12a0404debd0bdd6ed48f64dbfa
 
 COCOAPODS: 1.2.0.beta.3

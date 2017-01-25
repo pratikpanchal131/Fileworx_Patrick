@@ -11,6 +11,8 @@ target 'Fileworx_Patrick' do
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'SwiftyJSON', :git => 'https://github.com/appsailor/SwiftyJSON.git', :branch => 'swift3'
     pod 'Toast-Swift', '~> 2.0.0'
+    pod 'Material', '~> 2.0'
+    
   # Pods for Fileworx_Patrick
 
 end
