@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class FWLoginVC: UIViewController {
     
@@ -16,7 +17,8 @@ class FWLoginVC: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnLoginAsGuest: UIButton!
     
-    
+    var amutArrayData : [Any]?
+
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
@@ -26,10 +28,44 @@ class FWLoginVC: UIViewController {
         btnLogin.layer.borderColor = UIColor.white.cgColor
         
         
+        print(self.test("Panchal"))
     }
  
     @IBAction func btnLoginClicked(_ sender: Any) {
+     
+
+        let objWeb:WebService = WebService()
         
+//        let aDict:[String:Any] = ["page_name":strPageName];
+        
+        objWeb.callWebService("http://212.118.26.115/FileworxMobileServer/api/Application/MobileSettings",aView:self.view,  param: nil) { json in
+            
+            debugPrint(json)
+            
+            print(json["RestResponse"])
+
+            if  (json["RestResponse"]["success"].string == "1") {
+                
+//                self.webView.loadHTMLString(json["data"][0]["content"].string!, baseURL: nil)
+                
+            }else{
+//                (json["settings"]["message"].string)!.showAlert
+            }
+        }
+  
+        
+//        Alamofire.request("http://services.groupkt.com/country/get/all").responseJSON { response in
+//            
+//            
+//            let JSON = response.result.value as! Dictionary<String,AnyObject>
+//            
+//            let aDictData = JSON["RestResponse"] as! Dictionary<String,AnyObject>
+//            self.amutArrayData  = aDictData["result"] as! [Any]?
+//            
+//            
+//            print("My Array is \(self.amutArrayData)")
+//            
+//        }
         
         let controller = Constants.Storyboard.kLoginAndSplashStoryboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
         self.navigationController?.pushViewController(controller, animated: true)
@@ -37,6 +73,12 @@ class FWLoginVC: UIViewController {
         
     }
     @IBAction func btnLoginAsGuestClicked(_ sender: Any) {
+    }
+ 
+    
+    func test(_ pratik:String) -> String{
+        
+        return "Name is " + pratik
     }
     
 }

@@ -12,6 +12,7 @@
 		A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E31E1CC57C009F4729 /* MessageVC.swift */; };
 		A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E61E1CC59B009F4729 /* MediaVC.swift */; };
 		A988A9EB1E1CCBD3009F4729 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9EA1E1CCBD3009F4729 /* Constants.swift */; };
+		A99249B51E3877640085924B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99249B41E3877640085924B /* WebService.swift */; };
 		A9AC35DC1E1B72F70053B560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */; };
 		A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35EB1E1B73CA0053B560 /* AppDelegate.swift */; };
 		A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35F21E1B746C0053B560 /* FWLoginVC.swift */; };
@@ -45,6 +46,7 @@
 		A988A9E31E1CC57C009F4729 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		A988A9E61E1CC59B009F4729 /* MediaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
 		A988A9EA1E1CCBD3009F4729 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A99249B41E3877640085924B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A9AC35CE1E1B72F70053B560 /* Fileworx_Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fileworx_Patrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC35DB1E1B72F70053B560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC35DD1E1B72F70053B560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		A9AC35ED1E1B741B0053B560 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A99249B41E3877640085924B /* WebService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				TargetAttributes = {
 					A9AC35CD1E1B72F70053B560 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -472,6 +476,7 @@
 			files = (
 				A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */,
 				A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */,
+				A99249B51E3877640085924B /* WebService.swift in Sources */,
 				A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */,
 				A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */,
 				A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */,

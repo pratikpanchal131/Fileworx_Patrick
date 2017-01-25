@@ -40,7 +40,7 @@ struct Constants {
 
 extension UIView{
     
-    func setRadiusColor(radius:CGFloat, color:UIColor = UIColor.clear) -> UIView{
+    func setRadiusColor(_ radius:CGFloat, color:UIColor = UIColor.clear) -> UIView{
         let rounfView:UIView = self
         rounfView.layer.cornerRadius = CGFloat(radius)
         rounfView.layer.borderWidth = 1

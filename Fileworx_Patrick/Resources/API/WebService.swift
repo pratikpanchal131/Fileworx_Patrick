@@ -15,15 +15,15 @@ class WebService: NSObject {
     
     // MARK: - Webservice Methods
     
-    func callWebService(aStrULR:String,aView:UIView!,param:[String : Any]?,imgData : Data? = nil,CompletionHandler:@escaping (JSON) -> Void) {
+    func callWebService(_ aStrULR:String,aView:UIView!,param:[String : Any]?,imgData : Data? = nil,CompletionHandler:@escaping (JSON) -> Void) {
         
         if imgData != nil {
-            self.callWebServiceWithImageData(aStrULR: aStrULR, imgData: imgData!, aView: aView, param: param, CompletionHandler: CompletionHandler)
+            self.callWebServiceWithImageData(aStrULR, imgData: imgData!, aView: aView, param: param, CompletionHandler: CompletionHandler)
             return
         }
         if aView != nil {
-           // MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
-            Constant.sharedInstance.startActivityIndicator()
+            MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
+//          Constantsnt.sharedInstance.startActivityIndicator()
         }
         
         print("--- URL : \(aStrULR)")
@@ -43,8 +43,8 @@ class WebService: NSObject {
                     if aView != nil{
                         CompletionHandler(["settings":["success":"0","message":"\(error!.localizedDescription)"]])
                         print("Request failed with error: \(error!.localizedDescription)")
-                       // MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
-                        Constant.sharedInstance.stopActivityIndicator()
+                        MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
+//                        Constants.sharedInstance.stopActivityIndicator()
                     }
                 }
             }
@@ -52,8 +52,8 @@ class WebService: NSObject {
                 
                 DispatchQueue.main.async {
                     if aView != nil{
-                        //MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
-                        Constant.sharedInstance.stopActivityIndicator()
+                        MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
+//                        Constant.sharedInstance.stopActivityIndicator()
                     }
                     if let responseData = responseData{
                         
@@ -67,11 +67,11 @@ class WebService: NSObject {
         
     }
     
-    func callWebServiceWithImageData(aStrULR:String,imgData:Data,aView:UIView!,param:[String : Any]?,CompletionHandler:@escaping (JSON) -> Void) {
+    func callWebServiceWithImageData(_ aStrULR:String,imgData:Data,aView:UIView!,param:[String : Any]?,CompletionHandler:@escaping (JSON) -> Void) {
         
         if aView != nil {
-            //MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
-            Constant.sharedInstance.startActivityIndicator()
+            MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
+//            Constant.sharedInstance.startActivityIndicator()
         }
         
         print("--- URL : \(aStrULR)")
@@ -115,8 +115,8 @@ class WebService: NSObject {
                     if aView != nil{
                         CompletionHandler(["settings":["success":"0","message":"\(error!.localizedDescription)"]])
                         print("Request failed with error: \(error!.localizedDescription)")
-                        //MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
-                        Constant.sharedInstance.stopActivityIndicator()
+                        MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
+//                        Constant.sharedInstance.stopActivityIndicator()
                     }
                 }
             }
@@ -124,8 +124,8 @@ class WebService: NSObject {
                 
                 DispatchQueue.main.async {
                     if aView != nil{
-                        //MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
-                        Constant.sharedInstance.stopActivityIndicator()
+                        MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
+//                        Constant.sharedInstance.stopActivityIndicator()
                     }
                     if let responseData = responseData{
                         
@@ -138,7 +138,7 @@ class WebService: NSObject {
         task.resume()
     }
     
-    func callWebServiceForGoodHireVerification(aStrULR:String,aView:UIView!,param:[String : Any]?,CompletionHandler:@escaping (JSON) -> Void) {
+    func callWebServiceForGoodHireVerification(_ aStrULR:String,aView:UIView!,param:[String : Any]?,CompletionHandler:@escaping (JSON) -> Void) {
         
         if aView != nil {
             MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
@@ -261,7 +261,7 @@ class WebService: NSObject {
     }
     
     func generateBoundaryString() -> String {
-        return "Boundary-\(NSUUID().uuidString)"
+        return "Boundary-\(UUID().uuidString)"
     }
 }
 
