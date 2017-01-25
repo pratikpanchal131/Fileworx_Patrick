@@ -16,6 +16,11 @@
 		A99249FC1E38A2830085924B /* FWDataMobileSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99249F91E38A2830085924B /* FWDataMobileSetting.swift */; };
 		A99249FD1E38A2830085924B /* FWGlobalMobileSetttings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99249FA1E38A2830085924B /* FWGlobalMobileSetttings.swift */; };
 		A99249FE1E38A2830085924B /* FWMobileSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99249FB1E38A2830085924B /* FWMobileSettingModel.swift */; };
+		A9924A041E38A30D0085924B /* FWAvailableModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99249FF1E38A30D0085924B /* FWAvailableModules.swift */; };
+		A9924A051E38A30D0085924B /* FWContentTasksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A001E38A30D0085924B /* FWContentTasksList.swift */; };
+		A9924A061E38A30D0085924B /* FWData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A011E38A30D0085924B /* FWData.swift */; };
+		A9924A071E38A30D0085924B /* FWScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A021E38A30D0085924B /* FWScreens.swift */; };
+		A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A031E38A30D0085924B /* FWUserModel.swift */; };
 		A9AC35DC1E1B72F70053B560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */; };
 		A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35EB1E1B73CA0053B560 /* AppDelegate.swift */; };
 		A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35F21E1B746C0053B560 /* FWLoginVC.swift */; };
@@ -53,6 +58,11 @@
 		A99249F91E38A2830085924B /* FWDataMobileSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWDataMobileSetting.swift; sourceTree = "<group>"; };
 		A99249FA1E38A2830085924B /* FWGlobalMobileSetttings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWGlobalMobileSetttings.swift; sourceTree = "<group>"; };
 		A99249FB1E38A2830085924B /* FWMobileSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMobileSettingModel.swift; sourceTree = "<group>"; };
+		A99249FF1E38A30D0085924B /* FWAvailableModules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWAvailableModules.swift; sourceTree = "<group>"; };
+		A9924A001E38A30D0085924B /* FWContentTasksList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWContentTasksList.swift; sourceTree = "<group>"; };
+		A9924A011E38A30D0085924B /* FWData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWData.swift; sourceTree = "<group>"; };
+		A9924A021E38A30D0085924B /* FWScreens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWScreens.swift; sourceTree = "<group>"; };
+		A9924A031E38A30D0085924B /* FWUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUserModel.swift; sourceTree = "<group>"; };
 		A9AC35CE1E1B72F70053B560 /* Fileworx_Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fileworx_Patrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC35DB1E1B72F70053B560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC35DD1E1B72F70053B560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +125,11 @@
 		A9837B6B1E1D04DE00CFB6B9 /* FWUserModule */ = {
 			isa = PBXGroup;
 			children = (
+				A99249FF1E38A30D0085924B /* FWAvailableModules.swift */,
+				A9924A001E38A30D0085924B /* FWContentTasksList.swift */,
+				A9924A011E38A30D0085924B /* FWData.swift */,
+				A9924A021E38A30D0085924B /* FWScreens.swift */,
+				A9924A031E38A30D0085924B /* FWUserModel.swift */,
 			);
 			path = FWUserModule;
 			sourceTree = "<group>";
@@ -493,15 +508,20 @@
 			files = (
 				A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */,
 				A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */,
+				A9924A041E38A30D0085924B /* FWAvailableModules.swift in Sources */,
 				A99249B51E3877640085924B /* WebService.swift in Sources */,
 				A99249FE1E38A2830085924B /* FWMobileSettingModel.swift in Sources */,
 				A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */,
 				A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */,
 				A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */,
+				A9924A071E38A30D0085924B /* FWScreens.swift in Sources */,
+				A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */,
+				A9924A061E38A30D0085924B /* FWData.swift in Sources */,
 				A9AC35FB1E1B75FB0053B560 /* FWSplashVC.swift in Sources */,
 				A99249FC1E38A2830085924B /* FWDataMobileSetting.swift in Sources */,
 				A988A9EB1E1CCBD3009F4729 /* Constants.swift in Sources */,
 				A99249FD1E38A2830085924B /* FWGlobalMobileSetttings.swift in Sources */,
+				A9924A051E38A30D0085924B /* FWContentTasksList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

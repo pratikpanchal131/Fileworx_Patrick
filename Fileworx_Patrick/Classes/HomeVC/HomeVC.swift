@@ -23,7 +23,7 @@ class HomeVC: UIViewController {
         
         super.viewDidLoad()
 
-        self.iniatLoadView()   // For Initail Load View Controller
+//        self.iniatLoadView()   // For Initail Load View Controller
     }
     
   

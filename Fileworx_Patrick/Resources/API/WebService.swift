@@ -67,6 +67,56 @@ class WebService: NSObject {
         
     }
     
+    
+    
+    
+    func callWebServiceWithURLSession(_ aStrULR:String, param: Dictionary <String,Any>,CompletionHandler:@escaping (_ json: JSON) -> Void) {
+        do {
+            if let url = NSURL(string: aStrULR){
+                let request = NSMutableURLRequest(url: url as URL)
+                request.httpMethod = "POST"
+                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+//                request.addValue("key=\(Constant.kServerKey)", forHTTPHeaderField: "Authorization")
+                MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow, animated: true)
+
+                let httpData = try JSONSerialization.data(withJSONObject:param, options:[])
+                
+                request.httpBody = httpData
+                let session = URLSession.shared
+                session.dataTask(with: request as URLRequest, completionHandler: { (returnData, response, error) -> Void in
+                    
+                    print(returnData)
+                    print(response)
+                    print(error)
+                    
+                   
+                    
+                    DispatchQueue.main.async {
+                            MBProgressHUD.hide(for: UIApplication.shared.keyWindow, animated: true)
+                            //                        Constant.sharedInstance.stopActivityIndicator()
+                      
+                        if let responseData = returnData{
+                            
+                            let json = JSON(data: responseData)
+                            CompletionHandler(json)
+                        }
+                    }
+
+                    
+                }).resume()
+                
+                
+            }
+            
+        } catch {
+            print("JSON serialization failed:  \(error)")
+        }
+        
+        
+    }
+    
+    
+    
     func callWebServiceWithImageData(_ aStrULR:String,imgData:Data,aView:UIView!,param:[String : Any]?,CompletionHandler:@escaping (JSON) -> Void) {
         
         if aView != nil {
