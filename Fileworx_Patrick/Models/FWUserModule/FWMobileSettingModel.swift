@@ -20,7 +20,7 @@ public class FWMobileSettingModel: NSObject, NSCoding {
 
 
     // MARK: Properties
-	public var data: FWData?
+	public var data: FWMobileSettingData?
 	public var message: String?
 	public var result: Int?
 
@@ -41,7 +41,7 @@ public class FWMobileSettingModel: NSObject, NSCoding {
     - returns: An initalized instance of the class.
     */
     public init(json: JSON) {
-		data = FWData(json: json[kFWMobileSettingModelDataKey])
+		data = FWMobileSettingData(json: json[kFWMobileSettingModelDataKey])
 		message = json[kFWMobileSettingModelMessageKey].string
 		result = json[kFWMobileSettingModelResultKey].int
 
@@ -70,7 +70,7 @@ public class FWMobileSettingModel: NSObject, NSCoding {
 
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
-		self.data = aDecoder.decodeObject(forKey: kFWMobileSettingModelDataKey) as? FWData
+		self.data = aDecoder.decodeObject(forKey: kFWMobileSettingModelDataKey) as? FWMobileSettingData
 		self.message = aDecoder.decodeObject(forKey: kFWMobileSettingModelMessageKey) as? String
 		self.result = aDecoder.decodeObject(forKey: kFWMobileSettingModelResultKey) as? Int
 
