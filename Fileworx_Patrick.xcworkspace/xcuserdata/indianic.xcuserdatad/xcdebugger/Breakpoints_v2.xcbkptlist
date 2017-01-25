@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fileworx_Patrick/Classes/LoginVC/FWLoginVC.swift"
-            timestampString = "507018414.960008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "btnLoginClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Fileworx_Patrick/Models/FWUserModule/FWMobileSetting.swift"
             timestampString = "507021073.781299"
             startingColumnNumber = "9223372036854775807"
@@ -36,16 +20,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Fileworx_Patrick.FWMobileSetting.__deallocating_deinit"
+                  symbolName = "Fileworx_Patrick.FWMobileSetting.init () -&gt; Fileworx_Patrick.FWMobileSetting"
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWMobileSetting.swift"
-                  timestampString = "507021616.024683"
+                  timestampString = "507022526.784357"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "18">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -55,7 +39,7 @@
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWMobileSetting.swift"
-                  timestampString = "507021616.033867"
+                  timestampString = "507022526.787256"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -86,7 +70,7 @@
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507021616.041385"
+                  timestampString = "507022526.807144"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -97,16 +81,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Fileworx_Patrick.FWData.init () -&gt; Fileworx_Patrick.FWData"
+                  symbolName = "Fileworx_Patrick.FWData.__allocating_init () -&gt; Fileworx_Patrick.FWData"
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507021616.044027"
+                  timestampString = "507022526.825681"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "18">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "3">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -134,7 +118,7 @@
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507021616.051712"
+                  timestampString = "507022526.851047"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -149,27 +133,12 @@
                   moduleName = "Fileworx_Patrick"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507021616.054086"
+                  timestampString = "507022526.853671"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
                   offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fileworx_Patrick.FWData.__allocating_init () -&gt; Fileworx_Patrick.FWData"
-                  moduleName = "Fileworx_Patrick"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507021616.057319"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "3">
                </Location>
             </Locations>
          </BreakpointContent>

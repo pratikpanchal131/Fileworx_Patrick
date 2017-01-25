@@ -18,6 +18,8 @@ class FWLoginVC: UIViewController {
     @IBOutlet weak var btnLoginAsGuest: UIButton!
     
     var amutArrayData : [Any]?
+    
+    var objMobileSettingModel : FWMobileSetting?
 
     // MARK: - View Life Cycle
 
@@ -43,14 +45,12 @@ class FWLoginVC: UIViewController {
             debugPrint(json)
             
             print(json["RestResponse"])
-
-            if  (json["RestResponse"]["success"].string == "1") {
-                
-//                self.webView.loadHTMLString(json["data"][0]["content"].string!, baseURL: nil)
-                
-            }else{
-//                (json["settings"]["message"].string)!.showAlert
-            }
+            self.objMobileSettingModel =  FWMobileSetting(json: json)
+            
+            
+            print("Message is \(self.objMobileSettingModel?.message)")
+            print("Message is \(self.objMobileSettingModel?.data?.globalMobileSetttings?.allowAnonymousAccess)")
+        
         }
   
         
