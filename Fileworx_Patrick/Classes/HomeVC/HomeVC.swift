@@ -23,18 +23,14 @@ class HomeVC: UIViewController {
         
         super.viewDidLoad()
 
-        var data =  UtilityUserDefault().getUDObject(KeyToReturnValye: "user")
-        var data1 =  UtilityUserDefault().getUDBool(key: "pratik")
+        let data =  UtilityUserDefault().getUDObject(KeyToReturnValye: "user")
+        let data1 =  UtilityUserDefault().getUDBool(key: "pratik")
 
         
         print("My Data is \((data)!)")
         print("My Data is \(data1)")
-
         
-        
-        
-        
-        
+     
         
         self.iniatLoadView()   // For Initail Load View Controller
     }

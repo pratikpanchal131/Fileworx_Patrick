@@ -494,7 +494,23 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-ET-c5i">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aoo-iN-uNs">
+                                        <rect key="frame" x="8" y="102" width="359" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Nm3-94-jOo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.89752485118528735" blue="0.91643966431286106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Aoo-iN-uNs" secondAttribute="trailing" constant="8" id="8rm-lr-3Fk"/>
+                                    <constraint firstItem="Aoo-iN-uNs" firstAttribute="top" secondItem="2Bh-ET-c5i" secondAttribute="top" constant="102" id="miZ-fZ-OsN"/>
+                                    <constraint firstItem="Aoo-iN-uNs" firstAttribute="leading" secondItem="2Bh-ET-c5i" secondAttribute="leading" constant="8" id="qDE-aP-AKu"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -505,6 +521,9 @@
                             <constraint firstAttribute="bottom" secondItem="2Bh-ET-c5i" secondAttribute="bottom" id="sGq-Xk-OMW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="Aoo-iN-uNs" id="VG8-xa-6cf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYC-AV-zrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

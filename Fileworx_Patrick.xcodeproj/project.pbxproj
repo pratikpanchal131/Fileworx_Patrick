@@ -22,6 +22,7 @@
 		A9924A061E38A30D0085924B /* FWData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A011E38A30D0085924B /* FWData.swift */; };
 		A9924A071E38A30D0085924B /* FWScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A021E38A30D0085924B /* FWScreens.swift */; };
 		A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A031E38A30D0085924B /* FWUserModel.swift */; };
+		A99C719C1E3B2A4E005B8C38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99C719E1E3B2A4E005B8C38 /* Localizable.strings */; };
 		A9AC35DC1E1B72F70053B560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */; };
 		A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35EB1E1B73CA0053B560 /* AppDelegate.swift */; };
 		A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35F21E1B746C0053B560 /* FWLoginVC.swift */; };
@@ -65,6 +66,9 @@
 		A9924A011E38A30D0085924B /* FWData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWData.swift; sourceTree = "<group>"; };
 		A9924A021E38A30D0085924B /* FWScreens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWScreens.swift; sourceTree = "<group>"; };
 		A9924A031E38A30D0085924B /* FWUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUserModel.swift; sourceTree = "<group>"; };
+		A99C719D1E3B2A4E005B8C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A99C719F1E3B2A52005B8C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A99C71A01E3B2A65005B8C38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9AC35CE1E1B72F70053B560 /* Fileworx_Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fileworx_Patrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC35DB1E1B72F70053B560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC35DD1E1B72F70053B560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +173,14 @@
 			path = FWMobileSettingModel;
 			sourceTree = "<group>";
 		};
+		A99C71971E3B2A2C005B8C38 /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				A99C719E1E3B2A4E005B8C38 /* Localizable.strings */,
+			);
+			path = Localize;
+			sourceTree = "<group>";
+		};
 		A9AC35C51E1B72F70053B560 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +256,7 @@
 		A9AC35E71E1B736C0053B560 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A99C71971E3B2A2C005B8C38 /* Localize */,
 				A9AC35ED1E1B741B0053B560 /* API */,
 				A9AC35EE1E1B741B0053B560 /* Fonts */,
 				A9AC35EF1E1B741B0053B560 /* Images */,
@@ -413,6 +426,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A9AC35C51E1B72F70053B560;
 			productRefGroup = A9AC35CF1E1B72F70053B560 /* Products */;
@@ -431,6 +445,7 @@
 			files = (
 				A9AC36151E1B79E50053B560 /* Roboto-Bold.ttf in Resources */,
 				A9AC36191E1B79E50053B560 /* Roboto-LightItalic.ttf in Resources */,
+				A99C719C1E3B2A4E005B8C38 /* Localizable.strings in Resources */,
 				A9AC36211E1B79E50053B560 /* RobotoCondensed-Italic.ttf in Resources */,
 				A9AC36201E1B79E50053B560 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				A9AC361B1E1B79E50053B560 /* Roboto-MediumItalic.ttf in Resources */,
@@ -532,6 +547,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A99C719E1E3B2A4E005B8C38 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A99C719D1E3B2A4E005B8C38 /* Base */,
+				A99C719F1E3B2A52005B8C38 /* en */,
+				A99C71A01E3B2A65005B8C38 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -547,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -597,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
