@@ -147,7 +147,7 @@ extension FWLoginVC{
         
         
         
-        WebService().callWebServiceWithURLSession("http://212.118.26.115/FileworxMobileServer/api/Account/Login" , param: json) { json
+        WebService().callWebServiceWithURLSession(loginAPIUrl, param: json) { json
             in
             
             print("json \(json)")
