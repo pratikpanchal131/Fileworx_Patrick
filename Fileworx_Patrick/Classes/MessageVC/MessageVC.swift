@@ -24,7 +24,7 @@ class MessageVC: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+
         /* changeLang(language: "en")  //  1) With Restart Method
          
          let preferredLanguage = NSLocale.preferredLanguages[0] as String
@@ -37,6 +37,12 @@ class MessageVC: UIViewController {
          print("this is Arabic")
          }
          */
+
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        lblMessage.text = Localization("Hello")
 
     }
 
@@ -64,7 +70,7 @@ extension MessageVC{
             if SetLanguage(arrayLanguages[3]) {
                 lblMessage.text = Localization("Hello")
                 lblMessage.textAlignment = NSTextAlignment.right
-                let isLeftToRight = UIView.userInterfaceLayoutDirection(
+                _ = UIView.userInterfaceLayoutDirection(
                     for: view.semanticContentAttribute) == .rightToLeft
                      UIView.appearance().semanticContentAttribute = .forceRightToLeft
             }
@@ -75,6 +81,7 @@ extension MessageVC{
     }
 
 }
+
 
 
 // 1) With Restart Method

@@ -42,6 +42,24 @@ class FWLoginVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let isLeftToRight = UIView.userInterfaceLayoutDirection(
+            for: view.semanticContentAttribute) == .leftToRight
+
+        if isLeftToRight {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            self.txtUserName.textAlignment = NSTextAlignment.right
+            self.txtPassword.textAlignment = NSTextAlignment.right
+
+        }else{
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+            self.txtUserName.textAlignment = NSTextAlignment.left
+            self.txtPassword.textAlignment = NSTextAlignment.left
+        }
+        
+    }
+    
     @IBAction func btnLoginClicked(_ sender: Any) {
         
 
