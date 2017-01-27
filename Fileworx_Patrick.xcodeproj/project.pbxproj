@@ -24,6 +24,7 @@
 		A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9924A031E38A30D0085924B /* FWUserModel.swift */; };
 		A99C719C1E3B2A4E005B8C38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99C719E1E3B2A4E005B8C38 /* Localizable.strings */; };
 		A99C71A21E3B43C5005B8C38 /* FWAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C71A11E3B43C5005B8C38 /* FWAPIConstant.swift */; };
+		A99C71A51E3B54B8005B8C38 /* Localisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C71A41E3B54B8005B8C38 /* Localisator.swift */; };
 		A9AC35DC1E1B72F70053B560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */; };
 		A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35EB1E1B73CA0053B560 /* AppDelegate.swift */; };
 		A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35F21E1B746C0053B560 /* FWLoginVC.swift */; };
@@ -71,6 +72,7 @@
 		A99C719F1E3B2A52005B8C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A99C71A01E3B2A65005B8C38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A99C71A11E3B43C5005B8C38 /* FWAPIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWAPIConstant.swift; sourceTree = "<group>"; };
+		A99C71A41E3B54B8005B8C38 /* Localisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localisator.swift; sourceTree = "<group>"; };
 		A9AC35CE1E1B72F70053B560 /* Fileworx_Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fileworx_Patrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC35DB1E1B72F70053B560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC35DD1E1B72F70053B560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		A99C71971E3B2A2C005B8C38 /* Localize */ = {
 			isa = PBXGroup;
 			children = (
+				A99C71A41E3B54B8005B8C38 /* Localisator.swift */,
 				A99C719E1E3B2A4E005B8C38 /* Localizable.strings */,
 			);
 			path = Localize;
@@ -532,6 +535,7 @@
 				A9924A041E38A30D0085924B /* FWAvailableModules.swift in Sources */,
 				A99C71A21E3B43C5005B8C38 /* FWAPIConstant.swift in Sources */,
 				A99249B51E3877640085924B /* WebService.swift in Sources */,
+				A99C71A51E3B54B8005B8C38 /* Localisator.swift in Sources */,
 				A99249FE1E38A2830085924B /* FWMobileSettingModel.swift in Sources */,
 				A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */,
 				A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */,

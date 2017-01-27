@@ -6,36 +6,78 @@
 //  Copyright © 2017 indianic. All rights reserved.
 //
 
+
+// Set R to L Using Two way 
+// 1) Using Restart App
+// 2) Set Using Witout Restart App
+
+
 import UIKit
 
 class MessageVC: UIViewController {
 
     @IBOutlet weak var lblMessage: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    let currentLang: AnyObject? = NSLocale.preferredLanguages[0] as AnyObject?      // 1) With Restart Method
+    let arrayLanguages = Localisator.sharedInstance.getArrayAvailableLanguages()    // 1) without Restart Method
 
-    /*
-    // MARK: - Navigation
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        /* changeLang(language: "en")  //  1) With Restart Method
+         
+         let preferredLanguage = NSLocale.preferredLanguages[0] as String
+         lblMessage.text = NSLocalizedString("Hello", comment: "Hello")
+         
+         
+         if preferredLanguage == "en" {
+         print("this is English")
+         } else if preferredLanguage == "ar" {
+         print("this is Arabic")
+         }
+         */
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
+
+}
+
+// 2) Without Restart Method
+extension MessageVC{
+    
+    @IBAction func setAppLanguage(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            if SetLanguage(arrayLanguages[1]) {
+                lblMessage.text = Localization("Hello")
+            }
+            //changeLang(language: "en")    // 1) With Restart Method
+            print("this is English")
+            
+        } else {
+            if SetLanguage(arrayLanguages[3]) {
+                lblMessage.text = Localization("Hello")
+                
+            }
+            //changeLang(language: "ar") // 1) With Restart Method
+            print("this is Arabic")
+            
+        }
+    }
+
+}
+
+
+// 1) With Restart Method
+extension MessageVC{
+    func changeLang(language: String) {
+        
+        if language != (currentLang as! String?)! {
+            UserDefaults.standard.set([language], forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+            print(self.currentLang)
+            lblMessage.text = NSLocalizedString("Hello", comment: "Hello")
+        }
+    }
 }

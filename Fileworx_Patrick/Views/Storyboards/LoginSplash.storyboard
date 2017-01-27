@@ -504,6 +504,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGD-xh-aLB">
+                                        <rect key="frame" x="131" y="178" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="setAppLanguage:" destination="our-5e-MLa" eventType="valueChanged" id="6Ir-Db-rL2"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.89752485118528735" blue="0.91643966431286106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

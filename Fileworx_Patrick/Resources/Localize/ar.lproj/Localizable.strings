@@ -10,3 +10,19 @@
 
 
 "Hello" = "مرحبا";
+"DeviceLanguage"                        = "iDevice Language";
+"English_en"                            = "English";
+"French_fr"                             = "French";
+
+"HomeTitleText"                         = "مرحبا";
+"HomeDescText"                          = "مرحبا";
+"HomeButtonTitle"                       = "مرحبا";
+
+"LocalisatorViewTitle"                  = "مرحبا";
+"LocalisatorViewCurrentLanguageText"    = "Current language :";
+"LocalisatorViewTestText"               = "Test labels :";
+"LocalisatorViewSaveText"               = "Save language :";
+
+"languageChangedWarningMessage"         = "App language just changed !";
+
+
