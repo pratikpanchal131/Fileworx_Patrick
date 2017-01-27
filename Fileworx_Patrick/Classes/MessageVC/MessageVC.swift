@@ -51,6 +51,11 @@ extension MessageVC{
         if sender.isOn {
             if SetLanguage(arrayLanguages[1]) {
                 lblMessage.text = Localization("Hello")
+                
+                let isLeftToRight = UIView.userInterfaceLayoutDirection(
+                    for: view.semanticContentAttribute) == .leftToRight
+                     UIView.appearance().semanticContentAttribute = .forceLeftToRight
+                lblMessage.textAlignment = NSTextAlignment.left
             }
             //changeLang(language: "en")    // 1) With Restart Method
             print("this is English")
@@ -58,7 +63,10 @@ extension MessageVC{
         } else {
             if SetLanguage(arrayLanguages[3]) {
                 lblMessage.text = Localization("Hello")
-                
+                lblMessage.textAlignment = NSTextAlignment.right
+                let isLeftToRight = UIView.userInterfaceLayoutDirection(
+                    for: view.semanticContentAttribute) == .rightToLeft
+                     UIView.appearance().semanticContentAttribute = .forceRightToLeft
             }
             //changeLang(language: "ar") // 1) With Restart Method
             print("this is Arabic")
