@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4768F6CA3B44505DBE417851 /* Pods_Fileworx_Patrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D65A9ABB6C9D704BC16EEE /* Pods_Fileworx_Patrick.framework */; };
-		A90E9E501E3B11EC00A776C2 /* FWUtilityUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */; };
 		A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95607C51E1B818800BE25C7 /* HomeVC.swift */; };
 		A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E31E1CC57C009F4729 /* MessageVC.swift */; };
 		A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E61E1CC59B009F4729 /* MediaVC.swift */; };
@@ -25,6 +24,7 @@
 		A99C719C1E3B2A4E005B8C38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99C719E1E3B2A4E005B8C38 /* Localizable.strings */; };
 		A99C71A21E3B43C5005B8C38 /* FWAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C71A11E3B43C5005B8C38 /* FWAPIConstant.swift */; };
 		A99C71A51E3B54B8005B8C38 /* Localisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C71A41E3B54B8005B8C38 /* Localisator.swift */; };
+		A99C71B01E3B65BE005B8C38 /* FWUtilityUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C71AF1E3B65BE005B8C38 /* FWUtilityUserDefault.swift */; };
 		A9AC35DC1E1B72F70053B560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */; };
 		A9AC35EC1E1B73CA0053B560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35EB1E1B73CA0053B560 /* AppDelegate.swift */; };
 		A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC35F21E1B746C0053B560 /* FWLoginVC.swift */; };
@@ -54,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		26D65A9ABB6C9D704BC16EEE /* Pods_Fileworx_Patrick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fileworx_Patrick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWUtilityUserDefault.swift; path = Fileworx_Patrick/Models/FWMobileSettingModel/FWUtilityUserDefault.swift; sourceTree = SOURCE_ROOT; };
 		A95607C51E1B818800BE25C7 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A988A9E31E1CC57C009F4729 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		A988A9E61E1CC59B009F4729 /* MediaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		A99C71A01E3B2A65005B8C38 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A99C71A11E3B43C5005B8C38 /* FWAPIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWAPIConstant.swift; sourceTree = "<group>"; };
 		A99C71A41E3B54B8005B8C38 /* Localisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localisator.swift; sourceTree = "<group>"; };
+		A99C71AF1E3B65BE005B8C38 /* FWUtilityUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUtilityUserDefault.swift; sourceTree = "<group>"; };
 		A9AC35CE1E1B72F70053B560 /* Fileworx_Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fileworx_Patrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC35DB1E1B72F70053B560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC35DD1E1B72F70053B560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +186,14 @@
 			path = Localize;
 			sourceTree = "<group>";
 		};
+		A99C71AE1E3B65BE005B8C38 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A99C71AF1E3B65BE005B8C38 /* FWUtilityUserDefault.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		A9AC35C51E1B72F70053B560 = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +218,10 @@
 				A9AC35E51E1B736C0053B560 /* Map */,
 				A9AC35E61E1B736C0053B560 /* Models */,
 				A9AC35E31E1B736C0053B560 /* Classes */,
+				A99C71AE1E3B65BE005B8C38 /* Utility */,
 				A9AC35E41E1B736C0053B560 /* Constant */,
 				A9837B6F1E1D0DB200CFB6B9 /* Extension */,
 				A9AC35E71E1B736C0053B560 /* Resources */,
-				A9AC35E81E1B736C0053B560 /* Utility */,
 				A9AC35E91E1B736C0053B560 /* Views */,
 				A9AC35DA1E1B72F70053B560 /* LaunchScreen.storyboard */,
 				A9AC35DD1E1B72F70053B560 /* Info.plist */,
@@ -269,14 +277,6 @@
 				A9AC35F01E1B741B0053B560 /* ThirdParty */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		A9AC35E81E1B736C0053B560 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */,
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		A9AC35E91E1B736C0053B560 /* Views */ = {
@@ -537,12 +537,12 @@
 				A99249B51E3877640085924B /* WebService.swift in Sources */,
 				A99C71A51E3B54B8005B8C38 /* Localisator.swift in Sources */,
 				A99249FE1E38A2830085924B /* FWMobileSettingModel.swift in Sources */,
+				A99C71B01E3B65BE005B8C38 /* FWUtilityUserDefault.swift in Sources */,
 				A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */,
 				A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */,
 				A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */,
 				A9924A071E38A30D0085924B /* FWScreens.swift in Sources */,
 				A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */,
-				A90E9E501E3B11EC00A776C2 /* FWUtilityUserDefault.swift in Sources */,
 				A9924A061E38A30D0085924B /* FWData.swift in Sources */,
 				A9AC35FB1E1B75FB0053B560 /* FWSplashVC.swift in Sources */,
 				A99249FC1E38A2830085924B /* FWDataMobileSetting.swift in Sources */,
