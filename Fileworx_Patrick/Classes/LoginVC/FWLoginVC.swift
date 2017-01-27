@@ -37,6 +37,8 @@ class FWLoginVC: UIViewController {
         btnLogin.layer.cornerRadius = 5
         btnLogin.layer.borderColor = UIColor.white.cgColor
         
+        self.txtUserName.text = "root"
+        self.txtPassword.text = "root"
         
     }
     
@@ -151,10 +153,16 @@ extension FWLoginVC{
             print("json \(json)")
             self.objUserModel  = FWUserModel(json:json)
             
+            
+            
             print("Result -> \((self.objUserModel?.data)!)")
             
             if self.objUserModel?.result == 0
             {
+                
+                UtilityUserDefault().setUDObject(ObjectToSave: self.objUserModel?.message as AnyObject?, KeyToSave: "user")
+                UtilityUserDefault().setUDBool(true,key: "pratik")
+
                 let controller = Constants.Storyboard.kLoginAndSplashStoryboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
                 self.navigationController?.pushViewController(controller, animated: true)
                 

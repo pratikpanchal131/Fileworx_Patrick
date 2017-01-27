@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4768F6CA3B44505DBE417851 /* Pods_Fileworx_Patrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D65A9ABB6C9D704BC16EEE /* Pods_Fileworx_Patrick.framework */; };
+		A90E9E501E3B11EC00A776C2 /* FWUtilityUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */; };
 		A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95607C51E1B818800BE25C7 /* HomeVC.swift */; };
 		A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E31E1CC57C009F4729 /* MessageVC.swift */; };
 		A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E61E1CC59B009F4729 /* MediaVC.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		26D65A9ABB6C9D704BC16EEE /* Pods_Fileworx_Patrick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fileworx_Patrick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWUtilityUserDefault.swift; path = Fileworx_Patrick/Models/FWMobileSettingModel/FWUtilityUserDefault.swift; sourceTree = SOURCE_ROOT; };
 		A95607C51E1B818800BE25C7 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A988A9E31E1CC57C009F4729 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		A988A9E61E1CC59B009F4729 /* MediaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		A9AC35E81E1B736C0053B560 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				A90E9E4F1E3B11EC00A776C2 /* FWUtilityUserDefault.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				A9AC35F31E1B746C0053B560 /* FWLoginVC.swift in Sources */,
 				A9924A071E38A30D0085924B /* FWScreens.swift in Sources */,
 				A9924A081E38A30D0085924B /* FWUserModel.swift in Sources */,
+				A90E9E501E3B11EC00A776C2 /* FWUtilityUserDefault.swift in Sources */,
 				A9924A061E38A30D0085924B /* FWData.swift in Sources */,
 				A9AC35FB1E1B75FB0053B560 /* FWSplashVC.swift in Sources */,
 				A99249FC1E38A2830085924B /* FWDataMobileSetting.swift in Sources */,
