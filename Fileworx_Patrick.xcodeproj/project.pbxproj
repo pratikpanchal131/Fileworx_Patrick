@@ -13,6 +13,7 @@
 		A933E86E1E5FFE8F00B5D18F /* FWDateOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933E8691E5FFE8F00B5D18F /* FWDateOptionsList.swift */; };
 		A933E86F1E5FFE8F00B5D18F /* FWMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933E86A1E5FFE8F00B5D18F /* FWMessage.swift */; };
 		A933E8701E5FFE8F00B5D18F /* FWPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933E86B1E5FFE8F00B5D18F /* FWPaginationInfo.swift */; };
+		A933E8741E600C6300B5D18F /* FWMessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933E8731E600C6300B5D18F /* FWMessageListCell.swift */; };
 		A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95607C51E1B818800BE25C7 /* HomeVC.swift */; };
 		A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E31E1CC57C009F4729 /* MessageVC.swift */; };
 		A988A9E71E1CC59B009F4729 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988A9E61E1CC59B009F4729 /* MediaVC.swift */; };
@@ -65,6 +66,7 @@
 		A933E8691E5FFE8F00B5D18F /* FWDateOptionsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWDateOptionsList.swift; sourceTree = "<group>"; };
 		A933E86A1E5FFE8F00B5D18F /* FWMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMessage.swift; sourceTree = "<group>"; };
 		A933E86B1E5FFE8F00B5D18F /* FWPaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPaginationInfo.swift; sourceTree = "<group>"; };
+		A933E8731E600C6300B5D18F /* FWMessageListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMessageListCell.swift; sourceTree = "<group>"; };
 		A95607C51E1B818800BE25C7 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A988A9E31E1CC57C009F4729 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		A988A9E61E1CC59B009F4729 /* MediaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
@@ -146,6 +148,22 @@
 				A933E86B1E5FFE8F00B5D18F /* FWPaginationInfo.swift */,
 			);
 			path = FWMessageModule;
+			sourceTree = "<group>";
+		};
+		A933E8711E600C2900B5D18F /* FWMessages */ = {
+			isa = PBXGroup;
+			children = (
+				A933E8721E600C3A00B5D18F /* FWMessageList */,
+			);
+			path = FWMessages;
+			sourceTree = "<group>";
+		};
+		A933E8721E600C3A00B5D18F /* FWMessageList */ = {
+			isa = PBXGroup;
+			children = (
+				A933E8731E600C6300B5D18F /* FWMessageListCell.swift */,
+			);
+			path = FWMessageList;
 			sourceTree = "<group>";
 		};
 		A95607C41E1B815B00BE25C7 /* HomeVC */ = {
@@ -308,6 +326,7 @@
 		A9AC35E91E1B736C0053B560 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A933E8711E600C2900B5D18F /* FWMessages */,
 				A9AC35F71E1B75970053B560 /* Storyboards */,
 			);
 			path = Views;
@@ -566,6 +585,7 @@
 				A99C71A51E3B54B8005B8C38 /* Localisator.swift in Sources */,
 				A933E86C1E5FFE8F00B5D18F /* FWContents.swift in Sources */,
 				A99249FE1E38A2830085924B /* FWMobileSettingModel.swift in Sources */,
+				A933E8741E600C6300B5D18F /* FWMessageListCell.swift in Sources */,
 				A99C71B01E3B65BE005B8C38 /* FWUtilityUserDefault.swift in Sources */,
 				A988A9E41E1CC57C009F4729 /* MessageVC.swift in Sources */,
 				A95607C61E1B818800BE25C7 /* HomeVC.swift in Sources */,

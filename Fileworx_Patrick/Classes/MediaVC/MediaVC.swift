@@ -55,11 +55,6 @@ class MediaVC: UIViewController {
             
             print("Array Content is \(self.amutArrayData!)")
             
-//            self.objMobileSettingModel =  FWMobileSettingModel(json: json)
-//            
-//            
-//            print("Message is \(self.objMobileSettingModel?.message)")
-//            print("Message is \(self.objMobileSettingModel?.data?.globalMobileSetttings?.allowAnonymousAccess)")
             
         }
         
