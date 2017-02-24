@@ -58,7 +58,7 @@ extension MessageVC{
             if SetLanguage(arrayLanguages[1]) {
                 lblMessage.text = Localization("Hello")
                 
-                let isLeftToRight = UIView.userInterfaceLayoutDirection(
+                _ = UIView.userInterfaceLayoutDirection(
                     for: view.semanticContentAttribute) == .leftToRight
                      UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 lblMessage.textAlignment = NSTextAlignment.left

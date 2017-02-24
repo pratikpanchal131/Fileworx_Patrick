@@ -17,7 +17,7 @@ public class FWUserModel: NSObject, NSCoding {
 
 
     // MARK: Properties
-	public var data: FWData?
+	public var data: FWUserData?
 	public var message: String?
 	public var result: Int?
 
@@ -38,7 +38,7 @@ public class FWUserModel: NSObject, NSCoding {
     - returns: An initalized instance of the class.
     */
     public init(json: JSON) {
-		data = FWData(json: json[kFWUserModelDataKey])
+		data = FWUserData(json: json[kFWUserModelDataKey])
 		message = json[kFWUserModelMessageKey].string
 		result = json[kFWUserModelResultKey].int
 
@@ -67,7 +67,7 @@ public class FWUserModel: NSObject, NSCoding {
 
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
-		self.data = aDecoder.decodeObject(forKey: kFWUserModelDataKey) as? FWData
+		self.data = aDecoder.decodeObject(forKey: kFWUserModelDataKey) as? FWUserData
 		self.message = aDecoder.decodeObject(forKey: kFWUserModelMessageKey) as? String
 		self.result = aDecoder.decodeObject(forKey: kFWUserModelResultKey) as? Int
 
