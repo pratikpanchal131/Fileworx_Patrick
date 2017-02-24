@@ -10,9 +10,17 @@ import UIKit
 
 class MediaVC: UIViewController {
 
+    
+
+    let objWeb:WebService = WebService()
+    
+    var amutArrayData : [Any]?
+    var objContentsModel  : FWContents?
+    var objMessageModel  : FWMessage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.APICallMessageList()
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +40,29 @@ class MediaVC: UIViewController {
     }
     */
 
+    
+    func APICallMessageList() {
+        
+        objWeb.callWebService("http://212.118.26.115/FileworxMobileServer/api/Messages/Contents?SK=20182_24662&Cls=401&Obj=24661&Fn=ctrlQueryRun",aView:self.view,  param: nil) { json in
+            
+            debugPrint(json)
+            
+            print(json["data"])
+            
+            self.objMessageModel  = FWMessage(json:json)
+
+            self.amutArrayData = self.objMessageModel?.data?.contents
+            
+            print("Array Content is \(self.amutArrayData!)")
+            
+//            self.objMobileSettingModel =  FWMobileSettingModel(json: json)
+//            
+//            
+//            print("Message is \(self.objMobileSettingModel?.message)")
+//            print("Message is \(self.objMobileSettingModel?.data?.globalMobileSetttings?.allowAnonymousAccess)")
+            
+        }
+        
+
+    }
 }

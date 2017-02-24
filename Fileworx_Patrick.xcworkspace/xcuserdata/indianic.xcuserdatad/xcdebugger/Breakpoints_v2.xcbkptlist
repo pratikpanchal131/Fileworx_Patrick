@@ -29,38 +29,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1"
             endingLineNumber = "1">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fileworx_Patrick.FWData.__deallocating_deinit"
-                  moduleName = "Fileworx_Patrick"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507217602.728073"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fileworx_Patrick.FWData.__allocating_init () -&gt; Fileworx_Patrick.FWData"
-                  moduleName = "Fileworx_Patrick"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/DATA/Pratik%20/Pratik%20SVN%20/FileWorx%20Patrick/Fileworx_Patrick/Models/FWUserModule/FWData.swift"
-                  timestampString = "507217602.734312"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "3">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

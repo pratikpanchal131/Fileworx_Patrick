@@ -10,3 +10,4 @@ import Foundation
 
 
 let loginAPIUrl = "http://212.118.26.115/FileworxMobileServer/api/Account/Login"
+let FWAPIMessageList =  "http://212.118.26.115/FileworxMobileServer/api/Messages/Contents"
